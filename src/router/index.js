@@ -33,6 +33,11 @@ const routes = [
         component:()=>import('../views/Share.vue')
       }
     ]
+  },
+  {
+    path:'/login',
+    name:'login',
+    component:()=>import('../views/Login.vue')
   }
 ]
 
