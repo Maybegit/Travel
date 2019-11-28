@@ -104,6 +104,7 @@ export default {
       var uid = JSON.parse(sessionStorage.getItem("userInfo")).uid;
       collect(uid)
         .then(res => {
+          console.log(res)
           if(res.data.code == -1){
             this.$toast("没有收藏的活动");
             setTimeout(()=>{

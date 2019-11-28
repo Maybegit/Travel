@@ -43,6 +43,7 @@ export default {
       }
       updateuname(obj)
       .then(res=>{
+        console.log(res)
         this.$router.push("/login")
         sessionStorage.removeItem("userInfo")
       }).catch(err=>{

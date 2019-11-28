@@ -76,6 +76,7 @@ export default {
       // 此时可以自行将文件上传至服务器  在这里发请求
        updateicon(obj)
        .then(res=>{
+         console.log(res)
         var path1 = res.data.path1
         var userInfo = sessionStorage.getItem("userInfo");
         //if 将session中的数据转为对象 else 默认为this.uname

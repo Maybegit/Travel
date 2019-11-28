@@ -14,7 +14,7 @@
 | 平台 | 模块 | 功能 |
 |:------:|:-----:|:-----:|
 |移动端web端|首页|高德定位、分享/活动展示、分享活动详情|
-|移动端web端|活动|商家发布活动展示 、商家发布活动详情|
+|移动端web端|活动|商家发布活动展示 、商家发布活动详情、收藏活动、报名活动|
 |移动端web端|分享|用户和商家分享发布活动|
 |移动端web端|用户|登录、注册、我的收藏、我的发布、已报名活动|
 
@@ -53,8 +53,8 @@
 > 一般在进行前后分离开发需要配置好本地开发环境，  
 > 也就是说需要在本地搭建后台开发环境，node，java，php，等后台编程语言，提供接口支持。
 
-1. 项目后台编程语言是nodejs所有必须安装nodejs软件
-2. 项目github主页https://github.com/Maybegit/Travel
+1. 项目后台编程语言是nodejs所有必须安装nodejs软件 下载地址：http://nodejs.cn/download/
+2. 项目github主页    https://github.com/Maybegit/Travel
 3. 可使用git拉取源代码
 ```text
     git仓库地址 https://github.com/Maybegit/Travel.git
@@ -62,7 +62,7 @@
     进入目录：$ cd Travel/
     拉取项目：$ git pull origin master
 ```
-4. 下载源码需要依赖的外部文件，其实就是包。
+4. 下载源码需要依赖的外部文件，其实就是包 在根目录和server目录执行命令：
 ```text
     npm i  或者  npm install
 ```
@@ -93,7 +93,7 @@
 
 #### 接口列表
 
-##### 移动端接口列表
+##### 移动端接口列表（下面是一部分接口，详细接口请查阅doc文件夹下的前台接口文档）
 1. 用户模块
  - [注册接口](#/user/register )
  - [登录接口](#/user/login )
@@ -101,6 +101,7 @@
  - [我的收藏](#user/collect)
  - [删除我的分享](#user/share/delete)
  - [我的分享](#user/share)
+- [已报名活动](#/user/join )
 2. 首页模块
  - [用户分享的活动接口](#index/share/more )
  - [用户分享的活动详情接口](#index/share/detail ) 
