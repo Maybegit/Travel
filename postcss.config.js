@@ -1,3 +1,4 @@
+const name = 'Travel' 
 module.exports = {
   plugins: {
     autoprefixer: {

@@ -28,7 +28,7 @@
 .tabbar{
     height: 45px;
     box-sizing: border-box;
-    width: 100%;
+    width: 375px;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -64,9 +64,9 @@
 }
 a {
   text-decoration: none;
-  color: #999;
+  color: #8e8e8e;
 }
 .is-selected {
-  color: #000;
+  color: #27D798;
 }
 </style>

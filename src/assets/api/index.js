@@ -1,17 +1,25 @@
 import axios from 'axios'
-import {URL} from "../serviceAPI.js"
+import { URL } from "../serviceAPI.js"
 
-function getIndexdata(){
+//首页旅行日记接口
+function getActivities(obj) {
     return new Promise(
-        function (resolve,reject){
-            axios({
-                url:URL.getShoppingMallInfo,
-                method:'get'
-            }).then(res=>{
-                resolve(res.data.message.data)
+        function (resolve, reject) {
+            axios.get(URL.getActivities, {params:obj}).then(res => {
+                resolve(res)
+            })
+        }
+    )
+}
+//首页旅行日记详情接口
+function getDetail(id) {
+    return new Promise(
+        function (resolve, reject) {
+            axios.get(URL.getDetail, { params: { id } }).then(res => {
+                resolve(res.data.result)
             })
         }
     )
 }
 
-export{getIndexdata}
+export { getDetail,getActivities}

@@ -1,0 +1,2 @@
+use traveler;
+alter table traveler_user_share_detail add date DATE;
